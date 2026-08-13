@@ -1,0 +1,42 @@
+import math
+
+def distance(p1, p2):
+    return math.sqrt((p2[0] - p1[0]) ** 2 + (p2[1] - p1[1]) ** 2)
+
+def farthest_point(points):
+    origin = (0, 0)
+    farthest = points[0]
+    max_distance = distance(origin, farthest)
+
+    for point in points:
+        d = distance(origin, point)
+
+        if d > max_distance:
+            max_distance = d
+            farthest = point
+
+    return farthest, max_distance
+
+n = int(input("Enter number of points: "))
+
+points = []
+
+for i in range(n):
+    x = int(input("Enter x coordinate: "))
+    y = int(input("Enter y coordinate: "))
+    points.append((x, y))
+
+print("\nPoints:", points)
+
+print("\nEnter two point numbers to calculate distance:")
+p1 = int(input("Enter first point number: "))
+p2 = int(input("Enter second point number: "))
+
+d = distance(points[p1 - 1], points[p2 - 1])
+
+print("Distance between the points:", d)
+
+point, max_d = farthest_point(points)
+
+print("Point farthest from origin:", point)
+print("Distance from origin:", max_d)

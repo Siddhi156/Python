@@ -1,0 +1,16 @@
+project1 = {"Amit", "Riya", "Rahul", "Sneha", "Karan"}
+project2 = {"Riya", "Karan", "Neha", "Vishal", "Amit"}
+
+
+print("Employees working on both projects:")
+print(project1.intersection(project2))
+
+
+print("\nEmployees working only on Project 1:")
+print(project1.difference(project2))
+
+print("\nEmployees working only on Project 2:")
+print(project2.difference(project1))
+
+print("\nTotal unique employees:")
+print(project1.union(project2))

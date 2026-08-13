@@ -1,0 +1,20 @@
+server_ip = ("192.168.1.10",)   
+
+allowed_ips = ["192.168.1.2", "192.168.1.3", "192.168.1.4"]
+
+def update_allowed_ips(new_ip):
+    allowed_ips.append(new_ip)
+    print("Allowed IP added successfully.")
+
+print("Original Configuration:")
+print("Server IP:", server_ip)
+print("Allowed IPs:", allowed_ips)
+
+new_ip = input("\nEnter IP address to add: ")
+update_allowed_ips(new_ip)
+
+print("\nUpdated Configuration:")
+print("Server IP:", server_ip)
+print("Allowed IPs:", allowed_ips)
+
+print("\nServer IP cannot be changed because it is stored in a tuple.")
