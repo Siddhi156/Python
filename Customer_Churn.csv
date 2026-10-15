@@ -1,0 +1,10 @@
+CustomerID,Tenure,MonthlyCharges,ContractType,TechSupport,Churn
+C001,2,85.5,Month-to-month,No,Yes
+C002,24,60,One year,Yes,No
+C003,5,92,Month-to-month,No,Yes
+C004,36,55.5,Two year,Yes,No
+C005,8,79,Month-to-month,No,Yes
+C006,48,50,Two year,Yes,No
+C007,12,88,One year,Yes,No
+C008,3,99.5,Month-to-month,No,Yes
+C009,30,65,One year,Yes,No
